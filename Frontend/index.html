@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styling/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <title>E-commerce Website</title>
+  </head>
+  <body>
+    <section class="hero-section">
+      <header>
+        <h1>Urban Fashion</h1>
+        <nav>
+          <ul class="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#product-one">Shop</a></li>
+            <li><a href="#form-details">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <a href="#" id="user-icon"><img src="./assets/user.png" id="user" /></a>
+          <a href="cart.html"><img src="./assets/shoppinbag.png" id="bag" /></a>
+        </div>
+        <div id="mobile">
+          <a href="#" id="mobile-user-icon"><img src="./assets/user.png" id="user" /></a>
+          <a href="cart.html"><img src="./assets/shoppinbag.png" id="bag" /></a>
+          <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+        <div id="auth-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="login-form">
+              <h2>Login</h2>
+              <input type="email" placeholder="Email" id="login-email" />
+              <input type="password" placeholder="Password" id="login-password" />
+              <button id="login-btn">Login</button>
+              <p>Don't have an account? <a href="javascript:void(0);" id="switch-to-signup">Sign Up</a></p>
+            </div>
+            <div id="signup-form" style="display: none;">
+              <h2>Sign Up</h2>
+              <input type="text" placeholder="Full Name" id="signup-name" />
+              <input type="email" placeholder="Email" id="signup-email" />
+              <input type="password" placeholder="Password" id="signup-password" />
+              <button id="signup-btn">Sign Up</button>
+              <p>Already have an account? <a href="javascript:void(0);" id="switch-to-login">Login</a></p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="content">
+        <p>Trade-in-offer</p>
+        <h1>Super value deals<br /><span>On all products</span></h1>
+        <p>Save more with coupons & upto 50% off</p>
+        <a href="#"><button>Shop now</button></a>
+      </div>
+    </section>
+    
+
+    <section class="top-categories">
+      <h2>Top Categories</h2>
+      <div class="categories" id="first-category">
+        <img src="./assets/top categories photos/polo.jpg" />
+        <h4>Polos</h4>
+      </div>
+      <div class="categories" id="second-category">
+        <img src="./assets/top categories photos/shirt.jpg" />
+        <h4>Shirts</h4>
+      </div>
+      <div class="categories" id="third-category">
+        <img src="./assets/top categories photos/joggers.jpg" />
+        <h4>Joggers</h4>
+      </div>
+      <div class="categories" id="fourth-category">
+        <img src="./assets/top categories photos/pants.jpg" />
+        <h4>Pants</h4>
+      </div>
+    </section>
+
+    <main>
+      <section id="first-banner" class="first-banner-section">
+        <h2>Up to <span>30% Off</span> First Purchase</h2>
+        <h3>Use code:<span id="code"> FIRST</span></h3>
+        <button>Explore more</button>
+      </section>
+
+      <section id="product-one" class="featured-products-section ">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="product-container">
+          <div class="pro" onclick="window.location.href='singleproduct.html';">
+            <img src="./assets/Products/n1.jpg" />
+            <div class="description">
+              <span>Nike</span>
+              <h5>Nike T-shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>50 Aed</h4>
+            </div>
+            <a href="#"
+              ><box-icon name="cart-alt" color="#088178" class="cart"></box-icon
+            ></a>
+          </div>
+          <div class="pro" onclick="window.location.href='singleproduct.html';">
+            <img src="./assets/Products/n2.jpg" />
+            <div class="description">
+              <span>Nike</span>
+              <h5>Nike T-shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>50 Aed</h4>
+            </div>
+            <a href="#"
+              ><box-icon name="cart-alt" color="#088178" class="cart"></box-icon
+            ></a>
+          </div>
+          <div class="pro" onclick="window.location.href='singleproduct.html';">
+            <img src="./assets/Products/n3.jpg" />
+            <div class="description">
+              <span>Nike</span>
+              <h5>Nike T-shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>50 Aed</h4>
+            </div>
+            <a href="#"
+              ><box-icon name="cart-alt" color="#088178" class="cart"></box-icon
+            ></a>
+          </div>
+          <div class="pro" onclick="window.location.href='singleproduct.html';">
+            <img src="./assets/Products/n4.jpg" />
+            <div class="description">
+              <span>Nike</span>
+              <h5>Nike T-shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>50 Aed</h4>
+            </div>
+            <a href="#"
+              ><box-icon name="cart-alt" color="#088178" class="cart"></box-icon
+            ></a>
+          </div>
+          <div class="pro" onclick="window.location.href='singleproduct.html';">
+            <img src="./assets/Products/n5.jpg" />
+            <div class="description">
+              <span>Nike</span>
+              <h5>Nike T-shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>50 Aed</h4>
+            </div>
+            <a href="#"
+              ><box-icon name="cart-alt" color="#088178" class="cart"></box-icon
+            ></a>
+          </div>
+          <div class="pro" onclick="window.location.href='singleproduct.html';">
+            <img src="./assets/Products/n6.jpg" />
+            <div class="description">
+              <span>Nike</span>
+              <h5>Nike T-shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>50 Aed</h4>
+            </div>
+            <a href="#"
+              ><box-icon name="cart-alt" color="#088178" class="cart"></box-icon
+            ></a>
+          </div>
+          <div class="pro" onclick="window.location.href='singleproduct.html';">
+            <img src="./assets/Products/n7.jpg" />
+            <div class="description">
+              <span>Nike</span>
+              <h5>Nike T-shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>50 Aed</h4>
+            </div>
+            <a href="#"
+              ><box-icon name="cart-alt" color="#088178" class="cart"></box-icon
+            ></a>
+          </div>
+          <div class="pro" onclick="window.location.href='singleproduct.html';">
+            <img src="./assets/Products/n8.jpg" />
+            <div class="description">
+              <span>Nike</span>
+              <h5>Nike T-shirt</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>50 Aed</h4>
+            </div>
+            <a href="#"
+              ><box-icon name="cart-alt" color="#088178" class="cart"></box-icon
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="photo-banner" class="photo-banner-section">
+        <div class="i-banner-box">
+          <img src="./assets/Photo Banner/basics.jpeg" />
+          <h2>The Basics</h2>
+          <h5>Back to 'em</h5>
+        </div>
+        <div class="i-banner-box">
+          <img src="./assets/Photo Banner/summer.jpg" />
+          <h2>Liqiud Summer</h2>
+          <h5>It's giving fancy</h5>
+        </div>
+        <div class="i-banner-box">
+          <img src="./assets/Photo Banner/asics.jpeg" />
+          <h2>Asics</h2>
+          <h5>Dadcore dreams</h5>
+        </div>
+        <div class="i-banner-box">
+          <img src="./assets/Photo Banner/tommy.jpeg" />
+          <h2>Tommy Jeans</h2>
+          <h5>Americana : Incoming</h5>
+        </div>
+      </section>
+
+      <section id="second-banner" class="second-banner-section">
+        <h2>Up to <span>50% Off</span> Fresh Faves!</h2>
+        <h3>Incl. shirts, tees & more</h3>
+
+        <button>Explore more</button>
+      </section>
+
+      <section id="brand-logos" class="brand-logos-section">
+        <h2>Trending Brands</h2>
+        <div class="brand-container">
+          <img src="./assets/Brand logos/adidas.jpeg" class="brand-logo" />
+          <img src="./assets/Brand logos/carhartt.jpeg" class="brand-logo" />
+          <img src="./assets/Brand logos/dr-martens.jpeg" class="brand-logo" />
+          <img src="./assets/Brand logos/ellesse.jpeg" class="brand-logo" />
+          <img src="./assets/Brand logos/north-face.jpg" class="brand-logo" />
+        </div>
+      </section>
+
+      <section id="form-details">
+        <form action="">
+          <span>Leave a message</span>
+          <h2>We love to hear from you</h2>
+          <input type="text" placeholder="Your Name" />
+          <input type="text" placeholder="Your E-mail" />
+          <input type="text" placeholder="Subject" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <button>Submit</button>
+        </form>
+  
+        <div class="people">
+          <div>
+            <img src="./assets/People/2.png" />
+            <p>
+              <span>John Doe</span> Senior Marketing Manager <br />
+              Phone: +971 000000 <br />
+              Email: contact@gmail.com
+            </p>
+          </div>
+          <div>
+            <img src="./assets/People/2.png" />
+            <p>
+              <span>William James</span> Senior Marketing Manager <br />
+              Phone: +971 000000 <br />
+              Email: contact@gmail.com
+            </p>
+          </div>
+          <div>
+            <img src="./assets/People/2.png" />
+            <p>
+              <span>David Smith</span> Senior Marketing Manager <br />
+              Phone: +971 000000 <br />
+              Email: contact@gmail.com
+            </p>
+          </div>
+        </div>
+      </section>
+  
+    </main>
+
+    <section class="footer-section">
+      <footer>
+        <div class="Top-Footer" id="Socialmedia">
+          <div class="partition-top"></div>
+          <div class="sm-icon">
+            <box-icon type="logo" name="facebook-circle"></box-icon>
+            <box-icon name="twitter" type="logo"></box-icon>
+            <box-icon name="instagram" type="logo"></box-icon>
+          </div>
+          <div class="partition"></div>
+          <div class="pay-icon">
+            <img src="./assets/Pay/visalogo.png" />
+            <img src="./assets/Pay/Mastercard.png" />
+            <img src="./assets/Pay/Paypal logo.png" />
+            <img src="./assets/Pay/applepay.png" />
+          </div>
+          <div class="partition-bottom"></div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="column">
+            <h4>Contact</h4>
+            <p>
+              <span>Address : </span> 562 wellington road, street 32, San
+              francisco
+            </p>
+            <p><span>Phone : </span>+01 2222 365 / (+91) 01 2345 6789</p>
+            <p><span>Hours : </span>10 00 - 18 00, Mon - Sat</p>
+          </div>
+
+          <div class="column">
+            <h4>About</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Delivery Information</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h4>My Account</h4>
+            <ul>
+              <li><a href="#">Sign In </a></li>
+              <li><a href="cart.html">View Cart</a></li>
+              <li><a href="#">My Wishlist</a></li>
+              <li><a href="">Track My Order</a></li>
+              <li><a href="">Help</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright-footer">
+          <p>&copy; 2025 Urban Fashion All Rights Reserves</p>
+        </div>
+      </footer>
+    </section>
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
